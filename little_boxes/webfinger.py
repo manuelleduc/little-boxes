@@ -34,7 +34,7 @@ def webfinger(
         resource = "acct:" + resource
 
     # Security check on the url (like not calling localhost)
-    check_url(f"https://{host}", debug=debug)
+    check_url(f"http://{host}", debug=debug)
     is_404 = False
 
     for i, proto in enumerate(protos):
